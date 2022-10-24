@@ -140,65 +140,8 @@ const BottomTab = (props: any) => {
 };
 export default BottomTab;
 const styles = StyleSheet.create({
-  midIcon: {
-    height: 80,
-    width: 80,
-    // backgroundColor: Colors.primary,
-    borderRadius: 40,
-    position: 'absolute',
-  },
-  textActive: {
-    // color: Colors.primary,
-    // fontFamily: Fonts.PoppinsRegular,
-    fontSize: 13,
-
-    marginTop: 6,
-  },
-  textInActive: {
-    // color: Colors.primary,
-    // fontFamily: Fonts.PoppinsRegular,
-    fontSize: 13,
-    marginTop: 6,
-  },
   iconView: {
     justifyContent: 'center',
     alignItems: 'center',
-  },
-
-  ////////
-  container: {
-    flex: 1,
-    padding: 20,
-  },
-  button: {
-    marginVertical: 5,
-  },
-  bottomBar: {},
-  btnCircle: {
-    width: 60,
-    height: 60,
-    borderRadius: 35,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    padding: 10,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 0.5,
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 1.41,
-    elevation: 1,
-    bottom: 30,
-  },
-  imgCircle: {
-    width: 30,
-    height: 30,
-    tintColor: 'gray',
-  },
-  img: {
-    width: 30,
-    height: 30,
   },
 });
