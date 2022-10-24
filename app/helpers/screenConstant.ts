@@ -4,4 +4,5 @@ export const Screens = {
   addPost: 'AddPostScreen',
   notifications: 'NotificationScreen',
   profile: 'ProfileScreen',
+  bottomTab: 'BottomTab',
 };
