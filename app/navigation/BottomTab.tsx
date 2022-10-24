@@ -8,16 +8,16 @@ import ProfileScreen from '../screens/ProfileScreen';
 import React from 'react';
 import {View} from 'native-base';
 import {StyleSheet} from 'react-native';
-import HomeActive from '../assets/HomeActive';
-import HomeInActive from '../assets/HomeInActive';
-import NotificationActive from '../assets/NotificationActive';
-import NotificationInActive from '../assets/NotificationInActive';
-import AddActive from '../assets/AddActive';
-import AddInActive from '../assets/AddInActive';
-import SearchActive from '../assets/SearchActive';
-import SearchInActive from '../assets/SearchInActive';
-import ProfileActive from '../assets/ProfileActive';
-import ProfileInActive from '../assets/ProfileInActive';
+import HomeActive from '../assets/svg/HomeActive';
+import HomeInActive from '../assets/svg/HomeInActive';
+import SearchActive from '../assets/svg/SearchActive';
+import SearchInActive from '../assets/svg/SearchInActive';
+import AddActive from '../assets/svg/AddActive';
+import AddInActive from '../assets/svg/AddInActive';
+import NotificationActive from '../assets/svg/NotificationActive';
+import NotificationInActive from '../assets/svg/NotificationInActive';
+import ProfileActive from '../assets/svg/ProfileActive';
+import ProfileInActive from '../assets/svg/ProfileInActive';
 
 const BottomTab = (props: any) => {
   const Tab = createBottomTabNavigator();
@@ -58,11 +58,11 @@ const BottomTab = (props: any) => {
               <View>
                 {tabInfo.focused ? (
                   <View style={styles.iconView}>
-                    <SearchActive width={10} height={10} />
+                    <SearchActive width={12} height={12} />
                   </View>
                 ) : (
                   <View style={styles.iconView}>
-                    <SearchInActive width={10} height={10} />
+                    <SearchInActive width={12} height={12} />
                   </View>
                 )}
               </View>
@@ -79,11 +79,11 @@ const BottomTab = (props: any) => {
               <View>
                 {tabInfo.focused ? (
                   <View style={styles.iconView}>
-                    <AddActive width={7} height={7} />
+                    <AddActive width={8} height={8} />
                   </View>
                 ) : (
                   <View style={styles.iconView}>
-                    <AddInActive width={7} height={7} />
+                    <AddInActive width={8} height={8} />
                   </View>
                 )}
               </View>
