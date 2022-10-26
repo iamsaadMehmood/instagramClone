@@ -142,6 +142,6 @@ export const postsData: IPost[] = [
     ],
     username: 'saadmehmood',
     userProfilePic:
-      'https://images.unsplash.com/photo-1661347333339-51786af3b406?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+      'https://images.unsplash.com/photo-1666688832727-0f5dfb2b50c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
   },
 ];

@@ -44,7 +44,12 @@ const ProfileInformationComponent = (props: IProps) => {
           </VStack>
         </HStack>
       </HStack>
-      <Text style={styles.bioText}>{profile.bio}</Text>
+      <View style={styles.nameBioContainer}>
+        <Text style={styles.nameText}>
+          {profile.firstName + ' ' + profile.lastName}
+        </Text>
+        <Text style={styles.bioText}>{profile.bio}</Text>
+      </View>
       <HStack mt={2}>
         <Pressable style={styles.editProfileBtn}>
           <Text style={styles.editProfileText}>Edit Profile</Text>
@@ -62,6 +67,7 @@ const styles = StyleSheet.create({
     height: widthToDp(20),
     width: widthToDp(20),
     borderRadius: widthToDp(10),
+    // resizeMode: 'contain',
   },
   container: {
     paddingVertical: 10,
@@ -83,7 +89,14 @@ const styles = StyleSheet.create({
   },
   headingText: {
     fontSize: responsiveFontSize(16),
-    // fontWeight: '200',
+    fontWeight: '300',
+    color: Colors.textColor,
+    fontFamily: Fonts.PoppinsRegular,
+    lineHeight: 30,
+  },
+  nameText: {
+    fontSize: responsiveFontSize(18),
+    fontWeight: '400',
     color: Colors.textColor,
     fontFamily: Fonts.PoppinsRegular,
     lineHeight: 30,
@@ -94,8 +107,10 @@ const styles = StyleSheet.create({
     width: widthToDp(60),
     textAlign: 'justify',
     color: Colors.textColor,
-    marginTop: 10,
+  },
+  nameBioContainer: {
     marginLeft: 10,
+    marginTop: 10,
   },
   editProfileBtn: {
     height: 40,
