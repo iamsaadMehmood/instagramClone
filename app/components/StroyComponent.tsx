@@ -13,7 +13,7 @@ interface IProps {
 const StoryComponent = (props: IProps) => {
   return (
     <View style={styles.container}>
-      {props.story.username !== 'saad' ? (
+      {props.story.username !== 'saadmehmood' ? (
         <Pressable style={styles.buttonContainer}>
           <Image
             style={styles.image}
@@ -34,7 +34,9 @@ const StoryComponent = (props: IProps) => {
         </Pressable>
       )}
       <Text style={styles.name} numberOfLines={1}>
-        {props.story.username !== 'saad' ? props.story.username : 'Your Story'}
+        {props.story.username !== 'saadmehmood'
+          ? props.story.username
+          : 'Your Story'}
       </Text>
     </View>
   );

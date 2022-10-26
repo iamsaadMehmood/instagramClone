@@ -3,9 +3,9 @@ import {IStory} from '../model/IStory';
 export const storiesData: IStory[] = [
   {
     id: '0',
-    username: 'saad',
+    username: 'saadmehmood',
     userProfile:
-      'https://images.unsplash.com/photo-1666454539881-537712853cde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80',
+      'https://images.unsplash.com/photo-1661347333339-51786af3b406?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
     imageAttachment: [],
   },
   {
@@ -63,4 +63,5 @@ export const storiesData: IStory[] = [
       'https://images.unsplash.com/photo-1661956601030-fdfb9c7e9e2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1042&q=80',
     ],
   },
+
 ];

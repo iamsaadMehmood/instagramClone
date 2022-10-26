@@ -57,15 +57,18 @@ export default PostSingleComponent;
 const styles = StyleSheet.create({
   postContainer: {
     marginTop: 7,
-    width: widthToDp(100),
-    height: heightToDp(60),
-    backgroundColor: Colors.white,
+    paddingVertical: 10,
+    // display: 'flex',
+    // flex: 1,
+    // width: widthToDp(100),
+    // height: heightToDp(60),
+    backgroundColor: Colors.backgroundColor,
   },
   usernameText: {
     fontFamily: Fonts.PoppinsBlack,
     fontWeight: '400',
     fontSize: responsiveFontSize(16),
-    color: Colors.black,
+    color: Colors.textColor,
   },
   profilePic: {
     height: 30,
@@ -90,10 +93,11 @@ const styles = StyleSheet.create({
   countText: {
     fontFamily: Fonts.PoppinsRegular,
     fontWeight: '400',
-    color: Colors.white,
+    color: Colors.textColor,
   },
   image: {
     height: heightToDp(55),
     width: widthToDp(100),
+    // flex: 1,
   },
 });
