@@ -1,4 +1,4 @@
-import {HStack, Image, Text, View, Pressable} from 'native-base';
+import {HStack, Image, Text, View, Pressable, VStack} from 'native-base';
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {IProfile} from '../model/IProfile';
@@ -24,24 +24,24 @@ const ProfileInformationComponent = (props: IProps) => {
           alt="pic"
         />
         <HStack style={styles.innerContainer}>
-          <View>
+          <VStack>
             <Text style={styles.numberText}>
               {changeCount(profile.totalPost)}
             </Text>
             <Text style={styles.headingText}>Posts</Text>
-          </View>
-          <View mx={7}>
+          </VStack>
+          <VStack>
             <Text style={styles.numberText}>
               {changeCount(profileData.totalFollowers)}
             </Text>
             <Text style={styles.headingText}>Followers</Text>
-          </View>
-          <View>
+          </VStack>
+          <VStack>
             <Text style={styles.numberText}>
               {changeCount(profile.totalFollowing)}
             </Text>
             <Text style={styles.headingText}>Following</Text>
-          </View>
+          </VStack>
         </HStack>
       </HStack>
       <Text style={styles.bioText}>{profile.bio}</Text>
@@ -70,6 +70,8 @@ const styles = StyleSheet.create({
   innerContainer: {
     // marginLeft: 20,
     width: widthToDp(65),
+    justifyContent: 'space-between',
+    paddingRight: 10,
   },
   numberText: {
     fontSize: responsiveFontSize(18),
