@@ -58,6 +58,7 @@ const ProfileInformationComponent = (props: IProps) => {
           <AddConnectionIcon height={4} width={4} />
         </Pressable>
       </HStack>
+     
     </View>
   );
 };
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
   numberText: {
     fontSize: responsiveFontSize(18),
     fontWeight: '500',
-    fontFamily: Fonts.PoppinsBold,
+    fontFamily: Fonts.poppinsRegular,
     lineHeight: 36,
     color: Colors.textColor,
     textAlign: 'center',
@@ -103,8 +104,8 @@ const styles = StyleSheet.create({
   },
   bioText: {
     fontFamily: Fonts.PoppinsRegular,
-    fontSize: responsiveFontSize(14),
-    width: widthToDp(60),
+    fontSize: responsiveFontSize(16),
+    width: widthToDp(80),
     textAlign: 'justify',
     color: Colors.textColor,
   },

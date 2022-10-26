@@ -1,40 +1,38 @@
-import {Pressable, Text, View} from 'native-base';
+import {FlatList, Pressable, Text, View, VStack} from 'native-base';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import AddWhite from '../assets/svg/AddWhite';
+// import {Text} from 'react-native-svg';
 import {responsiveFontSize, widthToDp} from '../helpers/responsive';
-// import {View} from 'react-native';
-import {IStory} from '../model/IStory';
+import {IStoryHighlight} from '../model/IStoryHighlight';
 import {Colors} from '../utils/colors';
 import {Fonts} from '../utils/fonts';
 import SingleStoryComponent from './SingleStoryComponent';
 interface IProps {
-  story: IStory;
+  list: IStoryHighlight[];
 }
-const StoryComponent = (props: IProps) => {
+const StoriesHighlightFlatList = (props: IProps) => {
   return (
-    <View style={styles.container}>
-      {props.story.username !== 'saadmehmood' ? (
-        <Pressable style={styles.buttonContainer}>
-          <SingleStoryComponent story={props.story.userProfile} />
-        </Pressable>
-      ) : (
-        <Pressable style={styles.buttonContainer}>
-          <SingleStoryComponent story={props.story.userProfile} />
-          <View style={styles.add}>
-            <AddWhite width={4} height={4} />
+    <FlatList
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      keyExtractor={item => item.id}
+      data={props.list}
+      renderItem={item => {
+        return (
+          <View style={styles.container}>
+            <Pressable style={styles.buttonContainer}>
+              <SingleStoryComponent story={item.item.imageAttachment[0]} />
+            </Pressable>
+            <Text style={styles.descText} numberOfLines={1}>
+              {item.item.description}
+            </Text>
           </View>
-        </Pressable>
-      )}
-      <Text style={styles.name} numberOfLines={1}>
-        {props.story.username !== 'saadmehmood'
-          ? props.story.username
-          : 'Your Story'}
-      </Text>
-    </View>
+        );
+      }}
+    />
   );
 };
-export default StoryComponent;
+export default StoriesHighlightFlatList;
 const styles = StyleSheet.create({
   buttonContainer: {
     height: 82,
@@ -60,7 +58,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  name: {
+  descText: {
     fontFamily: Fonts.poppinsRegular,
     fontSize: responsiveFontSize(14),
     fontWeight: '400',

@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     width: widthToDp(100),
   },
   title: {
-    fontFamily: Fonts.PoppinsBlack,
+    fontFamily: Fonts.poppinsRegular,
     fontWeight: '500',
     marginLeft: 5,
     color: Colors.textColor,

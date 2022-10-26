@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.backgroundColor,
   },
   usernameText: {
-    fontFamily: Fonts.PoppinsBlack,
+    fontFamily: Fonts.poppinsRegular,
     fontWeight: '400',
     fontSize: responsiveFontSize(16),
     color: Colors.textColor,

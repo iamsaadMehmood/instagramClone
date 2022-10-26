@@ -1,8 +1,8 @@
 export const Fonts = {
-  PoppinsBlack: 'Poppins-Black',
-  PoppinsBlackItalic: 'Poppins-BlackItalic',
-  PoppinsBold: 'Poppins-Bold',
-  PoppinsBoldItalic: 'Poppins-BoldItalic',
+  poppinsRegular: 'Poppins-Black',
+  poppinsRegularItalic: 'Poppins-BlackItalic',
+  poppinsRegular: 'Poppins-Bold',
+  poppinsRegularItalic: 'Poppins-BoldItalic',
   PoppinsExtraBold: 'Poppins-ExtraBold',
   PoppinsExtraBoldItalic: 'Poppins-ExtraBoldItalic',
   PoppinsItalic: 'Poppins-Italic',

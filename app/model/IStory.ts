@@ -3,4 +3,5 @@ export interface IStory {
   username: string;
   userProfile: string;
   imageAttachment: string[];
+  createdDate: string;
 }

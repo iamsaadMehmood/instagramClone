@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     width: widthToDp(100),
   },
   title: {
-    fontFamily: Fonts.PoppinsBlack,
+    fontFamily: Fonts.poppinsRegular,
     fontWeight: '500',
     color: Colors.textColor,
     fontSize: responsiveFontSize(18),
