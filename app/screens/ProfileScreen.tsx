@@ -27,7 +27,6 @@ const ProfileScreen = () => {
             </View>
             <Text style={styles.text}>New</Text>
           </View>
-
           <StoriesHighlightFlatList list={storiesHighlightData} />
         </HStack>
       </VStack>
