@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   countText: {
     fontFamily: Fonts.PoppinsRegular,
     fontWeight: '400',
-    color: Colors.textColor,
+    color: Colors.backgroundColor,
   },
   image: {
     height: heightToDp(55),

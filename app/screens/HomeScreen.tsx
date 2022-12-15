@@ -1,4 +1,4 @@
-import {FlatList, ScrollView, Text} from 'native-base';
+import {FlatList, ScrollView, Text, View} from 'native-base';
 import {SafeAreaView} from 'react-native';
 import HeaderComponent from '../components/HeaderComponent';
 import StoriesFlatListComponent from '../components/StoriesFlatListComponent';
@@ -10,18 +10,19 @@ const HomeScreen = () => {
   return (
     <SafeAreaView>
       <HeaderComponent title={'Instagram'} />
-      <ScrollView
+      {/* <ScrollView
+        // nestedScrollEnabled
+        showsVerticalScrollIndicator={false}> */}
+      <FlatList
         height={heightToDp(80)}
+        ListHeaderComponent={<StoriesFlatListComponent data={storiesData} />}
+        showsVerticalScrollIndicator={false}
         nestedScrollEnabled
-        showsVerticalScrollIndicator={false}>
-        <StoriesFlatListComponent data={storiesData} />
-        <FlatList
-          showsVerticalScrollIndicator={false}
-          nestedScrollEnabled
-          data={postsData}
-          renderItem={item => <PostSingleComponent post={item.item} />}
-        />
-      </ScrollView>
+        data={postsData}
+        renderItem={item => <PostSingleComponent post={item.item} />}
+        keyExtractor={item => item.id}
+      />
+      {/* </ScrollView> */}
     </SafeAreaView>
   );
 };
