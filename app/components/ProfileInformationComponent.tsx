@@ -1,14 +1,14 @@
-import {HStack, Image, Text, View, Pressable, VStack} from 'native-base';
+import {HStack, Pressable, Text, View, VStack} from 'native-base';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {IProfile} from '../model/IProfile';
-import {profileData} from '../dummyData/profileData';
-import {responsiveFontSize, widthToDp} from '../helpers/responsive';
-import {Fonts} from '../utils/fonts';
-import {changeCount} from '../helpers/helperFunction';
-import {Colors} from '../utils/colors';
+import FastImage from 'react-native-fast-image';
 import AddConnectionIcon from '../assets/svg/AddConnectionIcon';
-
+import {profileData} from '../dummyData/profileData';
+import {changeCount} from '../helpers/helperFunction';
+import {responsiveFontSize, widthToDp} from '../helpers/responsive';
+import {IProfile} from '../model/IProfile';
+import {Colors} from '../utils/colors';
+import {Fonts} from '../utils/fonts';
 interface IProps {
   profile: IProfile;
 }
@@ -18,10 +18,12 @@ const ProfileInformationComponent = (props: IProps) => {
   return (
     <View style={styles.container}>
       <HStack justifyContent={'space-between'} alignItems={'center'}>
-        <Image
+        <FastImage
           style={styles.profilePic}
-          source={{uri: profile.profilePic}}
-          alt="pic"
+          source={{
+            uri: profile.profilePic,
+            priority: FastImage.priority.normal,
+          }}
         />
         <HStack style={styles.innerContainer}>
           <VStack>
@@ -58,7 +60,6 @@ const ProfileInformationComponent = (props: IProps) => {
           <AddConnectionIcon height={4} width={4} />
         </Pressable>
       </HStack>
-     
     </View>
   );
 };

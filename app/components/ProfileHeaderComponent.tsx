@@ -1,6 +1,5 @@
 import {HStack, Pressable, Text} from 'native-base';
 import {StyleSheet} from 'react-native';
-import ChatIcon from '../assets/svg/ChatIcon';
 import LockIcon from '../assets/svg/lockIcon';
 import OptionIcon from '../assets/svg/OptionIcon';
 import {heightToDp, responsiveFontSize, widthToDp} from '../helpers/responsive';

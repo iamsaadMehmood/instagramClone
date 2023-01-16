@@ -1,7 +1,5 @@
 import {FlatList} from 'native-base';
 import React from 'react';
-import {View} from 'react-native';
-import {storiesData} from '../dummyData/storydata';
 import {IStory} from '../model/IStory';
 import StoryComponent from './StroyComponent';
 interface IProps {

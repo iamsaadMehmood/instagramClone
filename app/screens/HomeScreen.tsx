@@ -10,9 +10,6 @@ const HomeScreen = () => {
   return (
     <SafeAreaView>
       <HeaderComponent title={'Instagram'} />
-      {/* <ScrollView
-        // nestedScrollEnabled
-        showsVerticalScrollIndicator={false}> */}
       <FlatList
         height={heightToDp(80)}
         ListHeaderComponent={<StoriesFlatListComponent data={storiesData} />}

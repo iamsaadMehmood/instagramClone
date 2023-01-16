@@ -1,4 +1,3 @@
-import {IPost} from './IPost';
 export interface INotification {
   id: string;
   description: string;

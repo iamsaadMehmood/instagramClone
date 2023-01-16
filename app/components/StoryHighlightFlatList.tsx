@@ -1,7 +1,6 @@
 import {FlatList, Pressable, Text, View, VStack} from 'native-base';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-// import {Text} from 'react-native-svg';
 import {responsiveFontSize, widthToDp} from '../helpers/responsive';
 import {IStoryHighlight} from '../model/IStoryHighlight';
 import {Colors} from '../utils/colors';

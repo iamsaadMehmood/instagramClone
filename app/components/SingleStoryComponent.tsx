@@ -1,11 +1,16 @@
-import {Image, View} from 'native-base';
 import React from 'react';
 import {StyleSheet} from 'react-native';
+import FastImage from 'react-native-fast-image';
 interface IProps {
   story: string;
 }
 const SingleStoryComponent = (props: IProps) => {
-  return <Image style={styles.image} source={{uri: props.story}} alt="story" />;
+  return (
+    <FastImage
+      style={styles.image}
+      source={{uri: props.story, priority: FastImage.priority.normal}}
+    />
+  );
 };
 const styles = StyleSheet.create({
   image: {

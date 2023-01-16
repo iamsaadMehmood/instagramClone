@@ -1,11 +1,12 @@
-import {FlatList, HStack, Image, Text, View} from 'native-base';
+import {FlatList, HStack, Text, View} from 'native-base';
 import React from 'react';
 import {StyleSheet} from 'react-native';
+import FastImage from 'react-native-fast-image';
 import {heightToDp, responsiveFontSize, widthToDp} from '../helpers/responsive';
+import {IAttachment} from '../model/IAttachment';
 import {IPost} from '../model/IPost';
 import {Colors} from '../utils/colors';
 import {Fonts} from '../utils/fonts';
-import {IAttachment} from '../model/IAttachment';
 interface IProps {
   post: IPost;
 }
@@ -14,12 +15,12 @@ const PostSingleComponent = (props: IProps) => {
   const renderPost = (item: IAttachment, index: number) => {
     return (
       <View style={{position: 'relative'}}>
-        <Image
+        <FastImage
           source={{
             uri: item.link,
+            priority: FastImage.priority.normal,
           }}
           style={styles.image}
-          alt="no image"
         />
         <View style={styles.countContainer}>
           <Text style={styles.countText}>{`${index + 1}/${
@@ -33,10 +34,12 @@ const PostSingleComponent = (props: IProps) => {
     <View style={styles.postContainer}>
       <HStack mx={5} justifyContent={'space-between'}>
         <HStack my={5} style={styles.userContainer}>
-          <Image
-            alt="pic"
+          <FastImage
             style={styles.profilePic}
-            source={{uri: post.userProfilePic}}
+            source={{
+              uri: post.userProfilePic,
+              priority: FastImage.priority.normal,
+            }}
           />
           <Text ml={2} style={styles.usernameText}>
             {post.username}

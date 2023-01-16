@@ -3,7 +3,6 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import AddWhite from '../assets/svg/AddWhite';
 import {responsiveFontSize, widthToDp} from '../helpers/responsive';
-// import {View} from 'react-native';
 import {IStory} from '../model/IStory';
 import {Colors} from '../utils/colors';
 import {Fonts} from '../utils/fonts';
