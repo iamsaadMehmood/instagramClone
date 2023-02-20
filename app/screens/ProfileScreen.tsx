@@ -1,14 +1,16 @@
-import {AddIcon, HStack, Text, View, VStack} from 'native-base';
+import {AddIcon, FlatList, HStack, Text, View, VStack} from 'native-base';
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import ProfileHeaderComponent from '../components/ProfileHeaderComponent';
 import ProfileInformationComponent from '../components/ProfileInformationComponent';
 import StoriesHighlightFlatList from '../components/StoryHighlightFlatList';
 import {profileData} from '../dummyData/profileData';
-import {responsiveFontSize, widthToDp} from '../helpers/responsive';
+import {heightToDp, responsiveFontSize, widthToDp} from '../helpers/responsive';
 import {Colors} from '../utils/colors';
 import {Fonts} from '../utils/fonts';
 import {storiesHighlightData} from '../dummyData/storyHighlightData';
+import {myPost} from '../dummyData/postsData';
+import ProfilePostItem from '../components/ProfilePostItem';
 
 const ProfileScreen = () => {
   return (
@@ -30,6 +32,14 @@ const ProfileScreen = () => {
           <StoriesHighlightFlatList list={storiesHighlightData} />
         </HStack>
       </VStack>
+      <View style={styles.list}>
+        <FlatList
+          data={myPost}
+          renderItem={item => <ProfilePostItem data={item.item} />}
+          numColumns={3}
+          keyExtractor={item => item.id}
+        />
+      </View>
     </SafeAreaView>
   );
 };
@@ -64,5 +74,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: Colors.textColor,
+  },
+  list: {
+    height: heightToDp(30),
   },
 });

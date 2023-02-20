@@ -137,7 +137,105 @@ export const postsData: IPost[] = [
     attachments: [
       {
         attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1676856780268-00cd806c1f00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=992&q=80',
+      },
+    ],
+    username: 'scott',
+    userProfilePic:
+      'https://images.unsplash.com/photo-1676856780268-00cd806c1f00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=992&q=80',
+  },
+];
+export const myPost: IPost[] = [
+  {
+    id: '1',
+    attachments: [
+      {
+        attachmentType: 'image',
         link: 'https://images.unsplash.com/photo-1661956601030-fdfb9c7e9e2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1042&q=80',
+      },
+    ],
+    username: 'saadmehmood',
+    userProfilePic:
+      'https://images.unsplash.com/photo-1666688832727-0f5dfb2b50c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+  },
+  {
+    id: '2',
+    attachments: [
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1666469918007-a01dcdbf7fdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80',
+      },
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1666513879822-db7e22472094?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80',
+      },
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1666089568080-2638f4c36f30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80',
+      },
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1666469942003-7aad31718729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80',
+      },
+    ],
+    username: 'saadmehmood',
+    userProfilePic:
+      'https://images.unsplash.com/photo-1666688832727-0f5dfb2b50c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+  },
+  {
+    id: '3',
+    attachments: [
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1675633273985-da157c2fc66a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+      },
+    ],
+    username: 'saadmehmood',
+    userProfilePic:
+      'https://images.unsplash.com/photo-1666688832727-0f5dfb2b50c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+  },
+  {
+    id: '4',
+    attachments: [
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1676642374710-420f1636aade?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+      },
+    ],
+    username: 'saadmehmood',
+    userProfilePic:
+      'https://images.unsplash.com/photo-1666688832727-0f5dfb2b50c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+  },
+  {
+    id: '5',
+    attachments: [
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1676845223022-b0c64c7f9ce9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+      },
+    ],
+    username: 'saadmehmood',
+    userProfilePic:
+      'https://images.unsplash.com/photo-1666688832727-0f5dfb2b50c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+  },
+  {
+    id: '6',
+    attachments: [
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1676856780268-00cd806c1f00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=992&q=80',
+      },
+    ],
+    username: 'saadmehmood',
+    userProfilePic:
+      'https://images.unsplash.com/photo-1666688832727-0f5dfb2b50c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+  },
+  {
+    id: '7',
+    attachments: [
+      {
+        attachmentType: 'image',
+        link: 'https://images.unsplash.com/photo-1676839670988-55a7e968f5f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
       },
     ],
     username: 'saadmehmood',
